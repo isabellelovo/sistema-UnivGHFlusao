@@ -18,6 +18,7 @@ public class Disciplina {
         this.setNome(nome);
         this.setCargaHoraria(cargaHoraria);
         this.conjTurmas = new ArrayList<>();
+        Disciplina.guardarDisciplina(this);
     }
     
     public int getId() {

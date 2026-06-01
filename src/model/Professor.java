@@ -30,6 +30,7 @@ public class Professor {
         this.setEndLogradouro(endLogradouro);
         this.setEndNumero(endNumero);
         this.conjTurmas = new ArrayList<>();
+        Professor.guardarProfessor(this);
     }
     
     public int getMatricula() {

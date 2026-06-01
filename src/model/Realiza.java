@@ -22,6 +22,7 @@ public class Realiza {
         this.setQtdErro(qtdErro);
         this.setCursa(cursa);
         this.setProva(prova);
+        Realiza.guardarRealiza(this);
     }
 
     public int getId() {

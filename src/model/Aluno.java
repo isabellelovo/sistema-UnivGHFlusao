@@ -30,6 +30,7 @@ public class Aluno {
         this.setEndNumero(endNumero);
         this.conjCursas = new ArrayList<>();
         this.cadastrar();
+        Aluno.guardarAluno(this);
     }
     
     public int getMatricula() {

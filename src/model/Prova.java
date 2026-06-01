@@ -16,7 +16,7 @@ public class Prova {
 
     private static List<Prova> armazenaProvas = new ArrayList<>();
 
-    public Prova(int id, String data, int qtdQuestao, double notaMax, double peso, String situacao, Turma turma) {
+    public Prova(int id, String data, int qtdQuestao, double notaMax, double peso, Turma turma) {
         super();
         this.setId(id);
         this.setData(data);
@@ -26,6 +26,7 @@ public class Prova {
         this.setTurma(turma);
         this.conjRealizas = new ArrayList<>();
         this.cadastrar();
+        Prova.guardarProva(this);
     }
 
     public int getId() {

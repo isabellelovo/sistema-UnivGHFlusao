@@ -28,6 +28,7 @@ public class Cursa {
         this.setAluno(aluno);
         this.setTurma(turma);
         this.conjRealizas = new ArrayList<>();
+        Cursa.guardarCursa(this);
     }
     
     public int getId() {

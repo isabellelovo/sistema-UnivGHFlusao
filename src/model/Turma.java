@@ -16,7 +16,7 @@ public class Turma {
 
     private static List<Turma> armazenaTurmas = new ArrayList<>();
 
-    public Turma(int id, int qtdAluno, String turno, String situacao, Disciplina disciplina, Professor professor) {
+    public Turma(int id, int qtdAluno, String turno, Disciplina disciplina, Professor professor) {
         super();
         this.setId(id);
         this.setQtdAluno(qtdAluno);
@@ -26,6 +26,7 @@ public class Turma {
         this.conjCursas = new ArrayList<>();
         this.conjProvas = new ArrayList<>();
         this.cadastrar();
+        Turma.guardarTurma(this);
     }
     
     public int getId() {
